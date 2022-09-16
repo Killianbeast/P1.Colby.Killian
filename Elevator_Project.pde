@@ -1,33 +1,49 @@
-int BtnW = 50;
-int BtnH = 50;
-Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10, btn11, btn12;
+// Created by Colby Killian for CS 3366 Human Computer Interaction
+// This program is a design sketch of the elevator system in the Texas Tech Media and Communication Office Tower Building
+// R11552865
+
+final int BtnW = 50;
+final int BtnH = 50;
+ArrayList<Button> btns = new ArrayList<Button>();
 
 void setup() {
   size(600, 1000);
   background(255);
   ellipseMode(CENTER);
-  btn1 = new Button(150, 400, BtnW, BtnH);
-  btn2 = new Button(300, 400, BtnW, BtnH);
-  btn3 = new Button(450, 400, BtnW, BtnH);
-  btn4 = new Button(150, 300, BtnW, BtnH);
-  btn5 = new Button(300, 300, BtnW, BtnH);
-  btn6 = new Button(450, 300, BtnW, BtnH);
-  btn7 = new Button(150, 200, BtnW, BtnH);
-  btn8 = new Button(300, 200, BtnW, BtnH);
-  btn9 = new Button(450, 200, BtnW, BtnH);
+  
+  for (int i = 0; i < 11; i++) {      // This will create every button for the elevator interface. I could not figure out a better way to do this
+   if (i >= 0 && i < 3) {    // First row
+      btns.add(new Button(150, 800, BtnW, BtnH));
+      i++;
+      btns.add(new Button(300, 800, BtnW, BtnH));
+      i++;
+      btns.add(new Button(450, 800, BtnW, BtnH));
+    } else if (i >= 3 && i < 6) {  // Second row
+      btns.add(new Button(150, 600, BtnW, BtnH));
+      i++;
+      btns.add(new Button(300, 600, BtnW, BtnH));
+      i++;
+      btns.add(new Button(450, 600, BtnW, BtnH));
+      i++;
+    } else if (i >= 6 && i < 9) {    // Third row
+      btns.add(new Button(150, 400, BtnW, BtnH));
+      i++;
+      btns.add(new Button(300, 400, BtnW, BtnH));
+      i++;
+      btns.add(new Button(450, 400, BtnW, BtnH));
+    } else if (i >= 9 && i < 12) {    // Fourth row
+      btns.add(new Button(150, 200, BtnW, BtnH));
+      i++;
+      btns.add(new Button(300, 200, BtnW, BtnH));
+      i++;
+      btns.add(new Button(450, 200, BtnW, BtnH));
+    }
+  }
 }
 
-void draw() {
-  btn1.create();
-  btn2.create();
-  btn3.create();
-  btn4.create();
-  btn5.create();
-  btn6.create();
-  btn7.create();
-  btn8.create();
-  btn9.create();
-  //btn10.create();
-  //btn11.create();
-  //btn12.create();
+void draw() {    // Draw function will constnatly listen for any sort of commands or updates that are sent to the screen
+  for (Button btn : btns) {    
+    btn.create();  // Creates every button
+    btn.btnclicked(mouseX, mouseY);    // Waits for the user to click on a button to activate
+  }
 }
