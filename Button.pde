@@ -15,7 +15,7 @@ class Button {
    ellipse(x-35, y, 125, btnh+20);
    fill(0,0,0);
    ellipse(x, y, btnw, btnh);
-   fill(255, 0, 0);
+   fill(0, 0, 0);
    textSize(25);
    if (btnIndex < 13) {
      text(String.format("%.0f", btnIndex), x-65, y);
@@ -39,7 +39,6 @@ class Button {
         if (btnIndex < 13) {
           text(String.format("%.0f", btnIndex), scrnX, scrnY);
         }
-        redraw();
       }
     }
   }

@@ -51,14 +51,22 @@ void setup() {
     btn.create();  // Creates every button
   }
   
-  fill(150);
-  rect(100, 0, 400, 300);
+  //fill(150);
+  //rect(100, 0, 400, 300);
   triangle(225, 375, 275, 425, 325, 375);
   triangle(225, 365, 275, 315, 325, 365);
+  noLoop();
 }
 
 void draw() {    // Draw function will constnatly listen for any sort of commands or updates that are sent to the screen
+  fill(150);
+  rect(100, 0, 400, 300);
   for (Button btn : btns) {
     btn.btnclicked(mouseX, mouseY);
   }
+  
+}
+
+void mousePressed() {
+  redraw();
 }
