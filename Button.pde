@@ -41,8 +41,7 @@ class Button {
         }
       }
     }
-  }
-  
+  }  
   int scrnX (int btnIndex) {
     switch(btnIndex) {
       case 1: case 2: case 3:
@@ -71,5 +70,4 @@ class Button {
     }
   }
 }
- 
- 
+  

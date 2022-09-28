@@ -15,35 +15,35 @@ void setup() {
   
   for (int i = 1; i <= 16; i++) {      // This will create every button for the elevator interface. I could not figure out a better way to do this
    if (i >= 1 && i < 4) {    // First row
-      btns.add(new Button(150, 800, BtnW, BtnH, 1));
+      btns.add(new Button(170, 800, BtnW, BtnH, 1));
       i++;
-      btns.add(new Button(300, 800, BtnW, BtnH, 2));
+      btns.add(new Button(320, 800, BtnW, BtnH, 2));
       i++;
-      btns.add(new Button(450, 800, BtnW, BtnH, 3));
+      btns.add(new Button(470, 800, BtnW, BtnH, 3));
     } else if (i >= 4 && i < 7) {  // Second row
-      btns.add(new Button(150, 700, BtnW, BtnH, 4));
+      btns.add(new Button(170, 700, BtnW, BtnH, 4));
       i++;
-      btns.add(new Button(300, 700, BtnW, BtnH, 5));
+      btns.add(new Button(320, 700, BtnW, BtnH, 5));
       i++;
-      btns.add(new Button(450, 700, BtnW, BtnH, 6));
+      btns.add(new Button(470, 700, BtnW, BtnH, 6));
     } else if (i >= 7 && i < 10) {    // Third row
-      btns.add(new Button(150, 600, BtnW, BtnH, 7));
+      btns.add(new Button(170, 600, BtnW, BtnH, 7));
       i++;
-      btns.add(new Button(300, 600, BtnW, BtnH, 8));
+      btns.add(new Button(320, 600, BtnW, BtnH, 8));
       i++;
-      btns.add(new Button(450, 600, BtnW, BtnH, 9));
+      btns.add(new Button(470, 600, BtnW, BtnH, 9));
     } else if (i >= 10 && i < 13) {    // Fourth row
-      btns.add(new Button(150, 500, BtnW, BtnH, 10));
+      btns.add(new Button(170, 500, BtnW, BtnH, 10));
       i++;
-      btns.add(new Button(300, 500, BtnW, BtnH, 11));
+      btns.add(new Button(320, 500, BtnW, BtnH, 11));
       i++;
-      btns.add(new Button(450, 500, BtnW, BtnH, 12));
+      btns.add(new Button(470, 500, BtnW, BtnH, 12));
     } else if (i >= 13 && i < 16) {
-      btns.add(new Button(150, 900, BtnW, BtnH, 13));
+      btns.add(new Button(170, 900, BtnW, BtnH, 13));
       i++;
-      btns.add(new Button(300, 900, BtnW, BtnH, 14));
+      btns.add(new Button(320, 900, BtnW, BtnH, 14));
       i++;
-      btns.add(new Button(450, 900, BtnW, BtnH, 15));
+      btns.add(new Button(470, 900, BtnW, BtnH, 15));
     }
   }
   
@@ -59,7 +59,7 @@ void setup() {
 }
 
 void draw() {    // Draw function will constnatly listen for any sort of commands or updates that are sent to the screen
-  fill(150);
+  fill(0,0,0);
   rect(100, 0, 400, 300);
   for (Button btn : btns) {
     btn.btnclicked(mouseX, mouseY);
@@ -69,4 +69,4 @@ void draw() {    // Draw function will constnatly listen for any sort of command
 
 void mousePressed() {
   redraw();
-}
+} 
