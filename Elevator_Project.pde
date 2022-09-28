@@ -7,9 +7,12 @@ final int BtnH = 50;
 int btnIndex = 0;
 ArrayList<Button> btns = new ArrayList<Button>();
 
+PImage bg;
+
 void setup() {
   size(600, 1000);
-  background(255);
+  bg = loadImage("woodgrain.jpg");
+  background(bg);
   ellipseMode(CENTER);
   rectMode(CORNER);
   
