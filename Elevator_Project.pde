@@ -53,6 +53,8 @@ void setup() {
   
   fill(150);
   rect(100, 0, 400, 300);
+  triangle(225, 375, 275, 425, 325, 375);
+  triangle(225, 365, 275, 315, 325, 365);
 }
 
 void draw() {    // Draw function will constnatly listen for any sort of commands or updates that are sent to the screen

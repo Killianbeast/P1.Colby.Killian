@@ -20,7 +20,11 @@ class Button {
    if (btnIndex < 13) {
      text(String.format("%.0f", btnIndex), x-65, y);
    } else if (btnIndex == 13) {
-     text("Bleh", x-65, y);
+     text("BELL", x-80, y+5);
+  } else if (btnIndex == 14) {
+    text("<|>", x-65, y+5);
+  } else if (btnIndex == 15) {
+    text(">|<", x-65, y+5);
   }
  }
   
@@ -32,7 +36,9 @@ class Button {
         textSize(50);
         int scrnX = scrnX((int) btnIndex);
         int scrnY = scrnY((int) btnIndex);
-        text(String.format("%.0f", btnIndex), scrnX, scrnY);
+        if (btnIndex < 13) {
+          text(String.format("%.0f", btnIndex), scrnX, scrnY);
+        }
         redraw();
       }
     }
