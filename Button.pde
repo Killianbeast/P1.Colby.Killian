@@ -17,17 +17,54 @@ class Button {
    ellipse(x, y, btnw, btnh);
    fill(255, 0, 0);
    textSize(25);
-   text(String.valueOf(btnIndex), x-20, y);
+   if (btnIndex < 13) {
+     text(String.format("%.0f", btnIndex), x-65, y);
+   } else if (btnIndex == 13) {
+     text("Bleh", x-65, y);
   }
+ }
   
   void btnclicked (float x2, float y2) {    // Grabs the position of the mouse when it is clicked
     if (x2 > x - btnw/2 && x2 < x + btnw/2 && y2 > y - btnh/2 && y2 < y + btnh/2) {      // Mouse cursor is within a button
       if (mousePressed) {    
         fill(255,0,0);
         ellipse(x, y, btnw, btnh);    // Creates a white circle in the same place as the button  
-        textSize(128);
-        text(String.valueOf(btnIndex), 100, 100);
+        textSize(50);
+        int scrnX = scrnX((int) btnIndex);
+        int scrnY = scrnY((int) btnIndex);
+        text(String.format("%.0f", btnIndex), scrnX, scrnY);
+        redraw();
       }
     }
   }
+  
+  int scrnX (int btnIndex) {
+    switch(btnIndex) {
+      case 1: case 2: case 3:
+        return 100;
+      case 4: case 5: case 6:
+        return 175;
+      case 7: case 8: case 9:
+        return 250;
+      case 10: case 11: case 12:
+        return 325;
+      default:
+        return 50;
+    }
+  }
+  
+  int scrnY (int btnIndex) {
+    switch(btnIndex) {
+      case 1: case 4: case 7: case 10:
+        return 50;
+      case 2: case 5: case 8: case 11:
+        return 125;
+      case 3: case 6: case 9: case 12:
+        return 200;
+      default:
+        return 50;
+    }
+  }
 }
+ 
+ 
