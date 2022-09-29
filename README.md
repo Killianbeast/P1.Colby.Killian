@@ -6,7 +6,7 @@ The purpose of this project to learn about how systems that we interact on a day
 The elevator I chose for this project is the TTU Media and Communications Office Tower elevator. I chose this specific elevator because I had never used it prior to this project, and I believe my first time experience would be beneficial to my project.
 
 ![Picture of the Elevator interface](https://cdn.discordapp.com/attachments/749867033516179476/1018961617251217600/20220908_085924.jpg)
-![GIF showing the Elevator in action](https://cdn.discordapp.com/attachments/749867033516179476/1024843003656937612/elevator_resized.gif)
+![GIF showing the Elevator in action](https://github.com/Killianbeast/P1.Colby.Killian/blob/main/elevator%20resized.gif)
 
 **Some issues with this design:**
 
