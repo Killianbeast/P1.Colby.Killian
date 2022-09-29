@@ -6,13 +6,14 @@ final int BtnW = 50;
 final int BtnH = 50;
 int btnIndex = 0;
 ArrayList<Button> btns = new ArrayList<Button>();
-
-PImage bg;
+PImage WoodGrain;
 
 void setup() {
   size(600, 1000);
-  bg = loadImage("woodgrain.jpg");
-  background(bg);
+  WoodGrain = loadImage("woodgrain.jpg");
+  WoodGrain.resize(600, 1000);
+  background(255);
+  image(WoodGrain,0,0);
   ellipseMode(CENTER);
   rectMode(CORNER);
   
@@ -58,18 +59,22 @@ void setup() {
   //rect(100, 0, 400, 300);
   triangle(225, 375, 275, 425, 325, 375);
   triangle(225, 365, 275, 315, 325, 365);
+  fill(0,0,0);
+  rect(100, 0, 400, 300);
   noLoop();
 }
 
 void draw() {    // Draw function will constnatly listen for any sort of commands or updates that are sent to the screen
-  fill(0,0,0);
-  rect(100, 0, 400, 300);
   for (Button btn : btns) {
     btn.btnclicked(mouseX, mouseY);
   }
-  
 }
 
 void mousePressed() {
   redraw();
 } 
+
+void keyPressed() {
+  fill(0,0,0,0);
+  rect(100, 0 , 400, 300);
+}

@@ -39,7 +39,20 @@ class Button {
         if (btnIndex < 13) {
           text(String.format("%.0f", btnIndex), scrnX, scrnY);
         }
-      }
+        
+        int rand = int(random(1,10));
+        if (rand % 2 == 1) {
+          fill(0);
+          triangle(225, 375, 275, 425, 325, 375);
+          fill(255, 0, 0);
+          triangle(225, 365, 275, 315, 325, 365);
+        } else if (rand % 2 == 0) {
+            fill(0);
+            triangle(225, 365, 275, 315, 325, 365);
+            fill(255, 0, 0);
+            triangle(225, 375, 275, 425, 325, 375);
+      } 
+     }
     }
   }  
   int scrnX (int btnIndex) {
