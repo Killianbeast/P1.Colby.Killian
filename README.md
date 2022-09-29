@@ -2,6 +2,11 @@
 This project was created by Colby Killian for CS 3366: Human Computer Interaction at Texas Tech University. 
 The purpose of this project to learn about how systems that we interact on a day-to-day basis are designed. This project focused on the design of an elevator interface.
 
+# Links
+[Presentation](https://killianbeast.github.io/P1.Colby.Killian/)
+
+[Github Repo](https://github.com/Killianbeast/P1.Colby.Killian)
+
 # The Elevator
 The elevator I chose for this project is the TTU Media and Communications Office Tower elevator. I chose this specific elevator because I had never used it prior to this project, and I believe my first time experience would be beneficial to my project.
 
@@ -67,3 +72,5 @@ Taking these into account, I created this sketch and took these changes into acc
 
 ![Sketch of the interface design](https://cdn.discordapp.com/attachments/749867033516179476/1024841421552898058/20220928_193342.jpg)
 
+# Demo GIF of the Elevator Interface
+![GIF Demo of my interface](https://github.com/Killianbeast/P1.Colby.Killian/blob/main/Elevator%20Demo.gif)
