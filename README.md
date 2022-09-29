@@ -5,7 +5,8 @@ The purpose of this project to learn about how systems that we interact on a day
 # The Elevator
 The elevator I chose for this project is the TTU Media and Communications Office Tower elevator. I chose this specific elevator because I had never used it prior to this project, and I believe my first time experience would be beneficial to my project.
 
-![https://cdn.discordapp.com/attachments/749867033516179476/1018961617251217600/20220908_085924.jpg](https://cdn.discordapp.com/attachments/749867033516179476/1018961617251217600/20220908_085924.jpg)
+![Picture of the Elevator interface](https://cdn.discordapp.com/attachments/749867033516179476/1018961617251217600/20220908_085924.jpg)
+![GIF showing the Elevator in action](https://cdn.discordapp.com/attachments/749867033516179476/1024843003656937612/elevator_resized.gif)
 
 **Some issues with this design:**
 
@@ -21,3 +22,48 @@ The elevator I chose for this project is the TTU Media and Communications Office
 - Circular buttons are more aesthetically pleasing to look at and easier to press than square ones
 
 In general, this design is very well implemented and is easy to use. Despite this, the interface can be improved to accommodate many users
+
+# Interaction With Elevators
+When a user interacts with an elevator control interface, they are usually met with a few basic things:
+
+- Buttons
+- A Screen that tells you which floor you will attending 
+- Directional indicators
+- Emergency communications
+
+There are some other more rare functions that a user might experience when interacting with an elevator:
+
+- Sounds
+- Music that plays during operation
+- Cancel buttons
+
+The most common and basic interaction with an elevator goes as follows:
+
+ 1. The user presses the directional button located outside the elevator on a floor landing 
+ 2. The elevator opens, and the user walks inside
+ 3. The user presses the button corresponding to the floor that they want to travel to
+ 4. The elevator closes, and takes the user to the floor they pressed
+ 5. The user exits the elevator at their floor
+
+But how does the elevator provide feedback to the user? There are many ways it can do it, but in general:
+
+- Light up buttons
+- Sounds
+- Screens that tell the user which floors have been selected
+
+# Possible Improvements than can be made
+There are many different ways that the elevator above can be improved.
+
+For starters, when I had originally used the elevator, I had noticed that the buttons were very low to the ground. While this could be because it was designed for handicapped people in mind, I noticed that they were too low even for them. Also, the screen on the elevator was way too high up, meaning I would have to lean down to press a button, then immediately look all the way up to view the screen. 
+
+Another thing that I noticed at first was that the button layout was a bit confusing. Not all of the buttons were lined up perfectly and it threw me off when I went to press my floor.
+
+Taking these into account, I created this sketch and took these changes into account:
+
+1. Move the buttons and the screen closer together for easy viewing
+2. Put the arrows close to the control interface
+3. Rearrange the buttons on the original elevator so that they are more streamlined and easier to read
+4. Make the interface a one-panel design so that it is clearer and easier to fix
+
+![Sketch of the interface design](https://cdn.discordapp.com/attachments/749867033516179476/1024841421552898058/20220928_193342.jpg)
+
