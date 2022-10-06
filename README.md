@@ -73,4 +73,4 @@ Taking these into account, I created this sketch and took these changes into acc
 ![Sketch of the interface design](https://cdn.discordapp.com/attachments/749867033516179476/1024841421552898058/20220928_193342.jpg)
 
 # Demo GIF of the Elevator Interface
-<img src='https://github.com/Killianbeast/P1.Colby.Killian/blob/main/Elevator%20Demo.gif'/>
+<img src='https://raw.githubusercontent.com/Killianbeast/P1.Colby.Killian/main/Elevator%20Demo.gif'/>
